@@ -1,0 +1,20 @@
+.song {
+    margin: 10px;
+    font-family: monospace;
+}
+
+#song-form {
+    width: fit-content;
+    margin-left: auto; 
+}
+#add-song {
+    background: darkgreen;
+    margin: 15px;
+    margin-left: 255px;
+}
+body {
+    background-image: url("../css/images/Desktop-Wallpaper-7.jpg"); 
+}
+.song:hover {
+    background-color: darkblue;
+  }
