@@ -8,17 +8,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Ajax</title>
+    <title>Favorite Songs</title>
 </head>
 
 <body>
-    <div id="buttons-view"></div>
-
     <div class="container">
-        <h1>Song search</h1> <hr>
-
-        <div id="song-view"></div>
-
+        <h1>Song search</h1>
+        <hr>
+        <div id="buttons-view"></div>
         <form id="song-form">
             <button for="song-input">Search for a Song</button>
             <input type="text" id="song-input"><br>
@@ -26,10 +23,11 @@
             <input id="add-song" type="submit" value="Submit">
         </form>
 
+        <div id="song-view"></div>
 
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="javascript/apps.js" type="text/javascript"></script>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="javascript/apps.js" type="text/javascript"></script>
 
 </body>
 
