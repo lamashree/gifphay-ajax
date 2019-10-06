@@ -1,20 +1,26 @@
 .song {
     margin: 10px;
-    font-family: monospace;
+    font-family: sans-serif, serif;
+    background: white;
+    width: 420px;
+    margin: left;
 }
 
 #song-form {
     width: fit-content;
-    margin-left: auto; 
+    margin-left: auto;
 }
+
 #add-song {
     background: darkgreen;
     margin: 15px;
     margin-left: 255px;
 }
+
 body {
-    background-image: url("../css/images/Desktop-Wallpaper-7.jpg"); 
+    background-image: url("../css/images/Desktop-Wallpaper-7.jpg");
 }
-.song:hover {
+
+.btsong:hover {
     background-color: darkblue;
-  }
+}
