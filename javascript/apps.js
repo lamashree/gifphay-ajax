@@ -71,7 +71,20 @@ function displaySongInfo() {
             var p = $("<p>").text("rated:" + rating_v);
             songDiv.append(p);
 
-            var image = resData.images.fixed_height_still.url;
+            //var image = resData.images.fixed_height_still.url;
+            var nonanimate= resData.images.fixed_height_still;
+            var animateImage= resData.images.fixed_height;
+            
+            var gifImg = $("<img>");
+                gifImg.attr("data-still");
+                gifImg.attr("src", nonanimate);
+                gifImg.addclass("imgclass");
+
+            /*$(document).on ("click", ".gif", function() {
+                
+                p.attr("alt", 'pictures for song');
+            }) */      
+            
             // var animateImage = resData.images.w_still;
             // console.log(animateImage + "this");
             // if (state == "still"){
@@ -79,9 +92,9 @@ function displaySongInfo() {
             //     p.attr("src", animateImage);
             // }
             // else{
-            var p = $("<img>");
-            p.attr("src", image);
-            p.attr("alt", 'pictures for song');
+            // var p = $("<img>");
+            // p.attr("src", image);
+            // p.attr("alt", 'pictures for song');
             // }
             songDiv.append(p);
 
@@ -99,6 +112,9 @@ function displaySongInfo() {
 
         }
     });
+
+    $('imgclass').on ("click", function() {});
+    $(document).on("click", ".imgclass", function() {});
 
 }
 
